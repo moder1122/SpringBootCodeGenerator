@@ -1,10 +1,10 @@
 import java.util.Map;
 
 /**
-* ${classInfo.classComment}
-* @author ${authorName}
-* @date ${.now?string('yyyy/MM/dd')}
-*/
+ * @description ${classInfo.classComment}
+ * @author ${authorName}
+ * @date ${.now?string('yyyy-MM-dd HH:mm:ss')}
+ */
 public interface ${classInfo.className}Service {
 
     /**
@@ -23,7 +23,7 @@ public interface ${classInfo.className}Service {
     public ReturnT<String> update(${classInfo.className} ${classInfo.className?uncap_first});
 
     /**
-    * 根據主鍵 id 查詢
+    * 根据主键 id 查询
     */
     public ${classInfo.className} load(int id);
 
